@@ -4,4 +4,6 @@
 ## 0. Run Python file
 **File:** 0-run<br>
 **Description:** Shell script that runs a Python script. Python file name will be saved in the environment variable $PYFILE
-
+## 1. Run inline
+**File:** 1. Run inline
+**Description:** Shell script that runs Python code.The Python code will be saved in the environment variable $PYCODE
