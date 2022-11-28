@@ -7,3 +7,6 @@
 ## 1. Run inline
 **File:** 1. Run inline
 **Description:** Shell script that runs Python code.The Python code will be saved in the environment variable $PYCODE
+## 2. Hello, print
+**File:** 2-print.py
+**Description:** Python script that prints exactly **Programming is like building a multilingual puzzle**, followed by a new line.
