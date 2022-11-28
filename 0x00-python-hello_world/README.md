@@ -10,3 +10,6 @@
 ## 2. Hello, print
 **File:** 2-print.py
 **Description:** Python script that prints exactly **Programming is like building a multilingual puzzle**, followed by a new line.
+## 3. Print integer
+**File:** 3-print_number.py
+**Description:**  print the integer stored in the variable number, followed by Battery street, followed by a new line.
