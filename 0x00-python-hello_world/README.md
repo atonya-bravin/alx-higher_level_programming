@@ -15,4 +15,7 @@
 **Description:**  print the integer stored in the variable number, followed by Battery street, followed by a new line.
 ## 5. Print string
 **File:** 5-print_string.py<br>
-**Description:**   print 3 times a string stored in the variable str, followed by its first 9 characters.
+**Description:** print 3 times a string stored in the variable str, followed by its first 9 characters.
+## 6. Play with strings
+**File:** 6-concat.py<br>
+**Description:** print Welcome to Holberton School!
