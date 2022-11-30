@@ -5,5 +5,5 @@ if number < 0:
     print(str(number) + " is negative");
 elif number == 0:
     print(str(number) + " is zero");
-else:
+elif:
     print(str(number) + " is positive");
