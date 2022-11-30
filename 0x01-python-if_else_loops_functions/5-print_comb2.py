@@ -7,4 +7,4 @@ for number in range(0, 100):
             str = '{0}, '
     elif number == 99:
         str = '{0}\n'
-    print(str.format(number), end = "")
+    print(str.format(number), end="")
