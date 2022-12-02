@@ -15,9 +15,13 @@ if __name__ == "__main__":
         exit(1)
     if operator == '+':
         print("{0} {1} {2} = {3}".format(a, operator, b, add(int(sys.argv[1]), int(sys.argv[3]))))
+        exit(0)
     elif operator == '-':
         print("{0} {1} {2} = {3}".format(a, operator, b, sub(int(sys.argv[1]), int(sys.argv[3]))))
+        exit(0)
     elif operator == '*':
         print("{0} {1} {2} = {3}".format(a, operator, b, mul(int(sys.argv[1]), int(sys.argv[3]))))
+        exit(0)
     elif operator == '/':
         print("{0} {1} {2} = {3}".format(a, operator, b, div(int(sys.argv[1]), int(sys.argv[3]))))
+        exit(0)
