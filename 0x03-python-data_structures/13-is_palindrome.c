@@ -11,7 +11,7 @@
  */
 int is_palindrome(listint_t **head)
 {
-	if (*head)
+	if (*head || *head == NULL)
 		return (1);
 	return (0);
 }
