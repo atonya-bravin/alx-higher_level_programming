@@ -1,4 +1,4 @@
-#!/usr/lib/python3
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     new_matrix = []
     for outter_index in range(len(matrix)):
