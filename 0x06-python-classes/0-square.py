@@ -4,5 +4,10 @@
    Creation of an empty class Square that defines a square
 """
 
+
 class Square:
+    """
+        This class does nothing
+    """
+
     pass
