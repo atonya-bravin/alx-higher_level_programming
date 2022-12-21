@@ -59,7 +59,7 @@ class Square:
         """prints the square using the # character"""
         if (self.__size > 0):
             for counter in range(self.__size):
-                if (self.__position[0] > 0):
+                if (self.__position[0] > 0 and self.__position[1] >= 0):
                     for space_counter in range(self.__position[0]):
                         print(" ", end="")
                 for counter in range(self.__size):
