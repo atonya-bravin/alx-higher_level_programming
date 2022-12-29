@@ -1,0 +1,31 @@
+*********************************
+0: Module used to add two numbers
+*********************************
+
+*****************
+Module impotation
+*****************
+   >>> add_integer = __import__('0-add_integer').add_integer
+
+*************
+add_integer() 
+*************
+   Adds two integers or floats and returns an integral result
+
+************************
+add_integer() Operations
+************************
+   a and b must be integers or floats, otherwise raise a <<TypeError>> exception with the message <<a must be an integer>> or <<b must be an integer>>
+
+************************
+non-parameter test cases
+************************
+   Test Case #1: function without parameters
+   >>> add_integer()
+   Traceback (most recent call last):
+   TypeError: add_integer() missing 1 required positional argument: 'a'
+   
+   Test Case #2: function without optional parameter
+   >>> add_integer(2)
+   100
+

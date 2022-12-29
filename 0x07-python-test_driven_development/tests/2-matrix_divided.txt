@@ -1,0 +1,59 @@
+******************
+1. Divide a matrix
+******************
+
+******************
+Module Importation
+******************
+   >>> matrix_divided = __import__('2-matrix_divided').matrix_divided	   
+
+******************************
+matrix_divided() as a function
+******************************
+   divides all elements of a matrix
+
+***************************
+matrix_divided() Operations
+***************************
+   #1) Matrix must be a list of lists of integers or floats, otherwise raise a <<TypeError>> exception
+       with the message <<matrix must be a matrix (list of lists) of integers/floats>>
+
+   #2) Each row of the matrix must be of the same size, otherwise raise a <<TypeError>> exception
+       with the message <<Each row of the matrix must have the same size>>
+
+   #3) div must be a number (integer or float), otherwise raise a <<TypeError>> exception with the message <<div must be a number>>
+
+   #4) div can’t be equal to 0, otherwise raise a <<ZeroDivisionError>> exception with the message <<division by zero>>
+
+*********************
+matrix initialization
+*********************
+   >>> matrix = [[1, 2, 3],[4, 5, 6]]
+
+************************
+non-parameter test cases
+************************
+
+   Test case #1: Empty argument list
+   *********************************
+      >>> matrix_divided()
+      Traceback (most recent call last):
+      TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+  
+   Test case #2: First agument supply only
+   ***************************************
+      >>> matrix_divided(matrix)
+      Traceback (most recent call last):
+      TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+**********************
+parametered test cases
+**********************
+
+   Test case #3: div set to zero
+   *****************************
+      >>> div = 0
+      >>> matrix_divided(matrix, div)
+      Traceback (most recent call last):
+      ZeroDivisionError: division by zero
+
