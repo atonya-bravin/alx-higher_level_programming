@@ -4,6 +4,7 @@
     Module that contains an empty Rectangle class
 """
 
+
 class Rectangle:
     """
         Empty class
