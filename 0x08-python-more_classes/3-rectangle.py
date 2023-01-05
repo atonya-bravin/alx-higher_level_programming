@@ -86,7 +86,8 @@ class Rectangle:
         for height_drawer in range(self.__height):
             for width_drawer in range(self.__width):
                 rectangle_string = rectangle_string + "#"
-            rectangle_string = rectangle_string + "\n"
+            if height_drawer < self.__height - 1:
+                rectangle_string = rectangle_string + "\n"
         return rectangle_string
 
     def __init__(self, width=0, height=0):
