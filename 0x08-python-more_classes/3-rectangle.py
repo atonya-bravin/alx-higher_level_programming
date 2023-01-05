@@ -90,7 +90,7 @@ class Rectangle:
         return rectangle_string
 
     def __print__(self):
-        __str__(self)
+        print(_str__(self))
 
     def __init__(self, width=0, height=0):
         """
