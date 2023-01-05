@@ -79,6 +79,9 @@ class Rectangle:
         """
 
         rectangle_string = ""
+        
+        if self.width == 0 or self.height == 0:
+            return rectangle_string
 
         for height_drawer in range(self.height):
             for width_drawer in range(self.width):
