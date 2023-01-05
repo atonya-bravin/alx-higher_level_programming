@@ -89,7 +89,6 @@ class Rectangle:
             rectangle_string = rectangle_string + "\n"
         return rectangle_string
 
-
     def __init__(self, width=0, height=0):
         """
             instance instantiation method
