@@ -89,8 +89,6 @@ class Rectangle:
             rectangle_string = rectangle_string + "\n"
         return rectangle_string
 
-    def __print__(self):
-        print(__str__(self))
 
     def __init__(self, width=0, height=0):
         """
