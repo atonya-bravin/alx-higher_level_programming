@@ -59,17 +59,17 @@ class Rectangle:
             returns the area of our rectangle
         """
 
-        return (self.width * self.height)
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """
             returns the perimeter of our rectangle
         """
 
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             perimeter = 0
         else:
-            perimeter = ((self.height * 2) + (self.width * 2))
+            perimeter = ((self.__height * 2) + (self.__width * 2))
 
         return perimeter
 
@@ -80,11 +80,11 @@ class Rectangle:
 
         rectangle_string = ""
 
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return rectangle_string
 
-        for height_drawer in range(self.height):
-            for width_drawer in range(self.width):
+        for height_drawer in range(self.__height):
+            for width_drawer in range(self.__width):
                 rectangle_string = rectangle_string + "#"
             rectangle_string = rectangle_string + "\n"
         return rectangle_string
@@ -97,5 +97,5 @@ class Rectangle:
             instance instantiation method
         """
 
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
