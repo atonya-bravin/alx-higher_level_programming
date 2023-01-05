@@ -91,9 +91,8 @@ parametered // Numbers
 
    Test case #12: A test case on casting of the passed parameter to integer using string
    *************************************************************************************
-    >>> add_integer(int("Trial"))
-    Traceback (most recent call last):
-    ValueError: invalid literal for int() with base 10: 'Trial' 
+    >>> add_integer(int(1))
+    99
 
 **************************
 Parametered // Non-Numbers
