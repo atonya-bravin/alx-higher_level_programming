@@ -89,10 +89,16 @@ parametered // Numbers
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
 
-   Test case #12: A test case on casting of the passed parameter to integer using string
-   *************************************************************************************
+   Test case #12: A test case on casting of the passed parameter to integer using int
+   **********************************************************************************
     >>> add_integer(int(1))
     99
+  
+   Test case #13: A test for float to integer conversion
+   *****************************************************
+    >>> print(add_integer(int(999e9999)))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
 
 **************************
 Parametered // Non-Numbers
