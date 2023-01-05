@@ -96,9 +96,9 @@ parametered // Numbers
   
    Test case #13: A test for float to integer conversion
    *****************************************************
-    >>> print(add_integer(int(999e9999)))
+    >>> print(add_integer(int(float('NaN'))))
     Traceback (most recent call last):
-    OverflowError: cannot convert float infinity to integer
+    ValueError: cannot convert float NaN to integer
 
 **************************
 Parametered // Non-Numbers
