@@ -100,6 +100,19 @@ parametered // Numbers
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
 
+   Test case #14: A test case between integer and infinity float
+   *************************************************************
+    >>> add_integer(5, 1e400)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+   Test case #11: A test case between infinity float and negative integer
+   **********************************************************************
+    >>> add_integer(999e9999, -1)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+
 **************************
 Parametered // Non-Numbers
 **************************
