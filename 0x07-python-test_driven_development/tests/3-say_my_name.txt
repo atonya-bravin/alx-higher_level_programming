@@ -1,0 +1,29 @@
+**************
+2. Say my name
+**************
+
+******************
+Module Importation
+******************
+   >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+*************
+say_my_name()
+*************
+   Prints My name is <first name> <last name>
+
+************************
+say_my_name() Operations
+************************
+   first_name and last_name must be strings otherwise, raise a <<TypeError>> exception 
+   with the message <<first_name must be a string>> or <<last_name must be a string>>
+
+************************
+non-parameter test codes
+************************
+
+   Test code #1: Empty argument list
+   *********************************
+      >>> say_my_name()
+      Traceback (most recent call last):
+      TypeError: say_my_name() missing 1 required positional argument: 'first_name'

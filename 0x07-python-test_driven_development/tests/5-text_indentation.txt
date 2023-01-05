@@ -1,0 +1,93 @@
+*******************
+4. Text indentation
+*******************
+
+*****************
+Module impotation
+*****************
+   >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+**********************
+text_indentation(text)
+**********************
+   This function takes in a text, then prints a text with 2 new lines
+   after each of these characters: ., ? and :
+
+********************************
+text_indentation(text) Operation
+********************************
+   #1) Text must be a string, otherwise raise a <<TypeError>> exception with the message <<text must be a string>>
+   #2) There should be no space at the beginning or at the end of each printed line
+
+******************
+Correct Parameters
+******************
+
+   Test case #1: A test case with a short text and a character for 2 new lines
+   ***************************************************************************
+    >>> text_indentation('By Faith?')
+    By Faith?
+    <BLANKLINE>
+
+   Test case #2: A test case with a short text and characters for 6 new lines
+   **************************************************************************
+    >>> text_indentation("Hello world. By faith? Is it:")
+    Hello world.
+    <BLANKLINE>
+    By faith?
+    <BLANKLINE>
+    Is it
+    <BLANKLINE>
+
+   Test case #3: A test case with a text with a special format
+   ***********************************************************
+    >>> text_indentation("""Bye world. \
+    ... Python Monty? \
+    ... Isn't""")
+    Bye world.
+    <BLANKLINE>
+    Python Monty?
+    <BLANKLINE>
+    Isn't
+
+   Test case #4: A test case with only spaces and characters to prints newlines
+   ****************************************************************************
+    >>> text_indentation("   ?:.   ")
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+   Test case #5: Another test case with only spaces and characters to prints newlines
+   **********************************************************************************
+    >>> text_indentation("  .??:?.  ")
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+********************
+Incorrect Parameters
+********************
+
+   Test case #7: A test case with an integer parameter
+   ***************************************************
+    >>> text_indentation(15)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+   Test case #8: A test case with an boolean parameter
+   ***************************************************
+    >>> text_indentation(True)
+    Traceback (most recent call last):
+    TypeError: text must be a string
