@@ -128,7 +128,7 @@ class Rectangle:
         """
 
         if type(size) != int:
-            size = int(size)
+            raise TypeError("size must be an integer")
         if size < 0:
             size = 0
         return cls(size, size)
