@@ -127,10 +127,10 @@ class Rectangle:
             that returns a new Rectangle instance with width == height == size
         """
 
-        if type(value) != int:
+        if type(size) != int:
             raise TypeError("height must be an integer")
 
-        if value < 0:
+        if size < 0:
             raise ValueError("height must be >= 0")
         return cls(size, size)
 
