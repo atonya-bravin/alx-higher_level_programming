@@ -123,6 +123,10 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """
+            that returns a new Rectangle instance with width == height == size
+        """
+
         if type(value) != int:
             raise TypeError("height must be an integer")
 
