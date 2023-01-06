@@ -128,10 +128,9 @@ class Rectangle:
         """
 
         if type(size) != int:
-            raise TypeError("height must be an integer")
-
+            size = int(size)
         if size < 0:
-            raise ValueError("height must be >= 0")
+            size = 0
         return cls(size, size)
 
     def __init__(self, width=0, height=0):
