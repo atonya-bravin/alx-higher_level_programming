@@ -36,8 +36,8 @@ def matrix_divided(matrix, div):
 
         for element in matrix[index]:
             if type(element) not in (int, float):
-                raise TypeError("matrix must be a matrix (list of lists)\
-                        of integers/floats")
+                raise TypeError(err_str)
+
             result = round((element / div), 2)
 
             results_list.append(result)
