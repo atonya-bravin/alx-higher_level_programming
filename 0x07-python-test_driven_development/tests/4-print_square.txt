@@ -51,3 +51,9 @@ falty parameters taste cases
       >>> print_square(-50)
       Traceback (most recent call last):
       ValueError: size must be >= 0
+
+   Test case #5: A taste case with no parameter
+   ********************************************
+      >>> print_square()
+      Traceback (most recent call last):
+      TypeError: print_square() missing 1 required positional argument: 'size'
