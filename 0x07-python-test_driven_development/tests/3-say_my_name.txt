@@ -27,3 +27,20 @@ non-parameter test codes
       >>> say_my_name()
       Traceback (most recent call last):
       TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+   Test code #2: first name of int type
+   ************************************
+      >>> say_my_name(12, "White")
+      Traceback (most recent call last):
+      TypeError: first_name must be a string
+
+   Test code #3: last name of int type
+   ***********************************
+      >>> say_my_name("white", 12)
+      Traceback (most recent call last):
+      TypeError: last_name must be a string
+
+   Test code #4: proper function
+   *****************************
+      >>> say_my_name("Bravin", "Atonya")
+      My name is Bravin Atonya
