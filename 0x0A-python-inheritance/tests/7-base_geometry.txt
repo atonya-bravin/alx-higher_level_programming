@@ -46,3 +46,15 @@ Parametered functions
    >>> obj.integer_validator("distance", -4)
    Traceback (most recent call last):
    ValueError: distance must be greater than 0
+
+   Test Case #3: More parameters than required
+   *******************************************
+   >>> obj.integer_validator("numbers", 0, 1)
+   Traceback (most recent call last):
+   TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+   Test case #4: value as an infinite integer
+   ******************************************
+   >>> obj.integer_validator("infnumber", int('inf'))
+   Traceback (most recent call last):
+   ValueError: invalid literal for int() with base 10: 'inf'
