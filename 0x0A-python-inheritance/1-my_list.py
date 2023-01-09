@@ -16,5 +16,3 @@ class MyList(list):
 
         if issubclass(MyList, list):
             print(sorted(self))
-
-
