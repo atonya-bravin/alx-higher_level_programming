@@ -7,6 +7,11 @@ Module Importation
 ******************
    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+********************
+object instantiation
+********************
+   >>> obj = BaseGeometry()
+
 *******************
 integer_validator()
 *******************
@@ -26,15 +31,18 @@ Parametered functions
 
    Test case #0: string value
    **************************
-   >>> integer_validator("name", "John")
-   [TypeError] name must be an integer
+   >>> obj.integer_validator("name", "John")
+   Traceback (most recent call last):
+   TypeError: name must be an integer
 
    Test case #1: value equal to 0
    ******************************
-   >>> integer_validator("age", 0)
-   [ValueError] age must be greater than 0
+   >>> obj.integer_validator("age", 0)
+   Traceback (most recent call last):
+   ValueError: age must be greater than 0
 
    Test case #2: value less than 0
    *******************************
-   >>> integer_validator("distance", -4)
-   [ValueError] distance must be greater than 0
+   >>> obj.integer_validator("distance", -4)
+   Traceback (most recent call last):
+   ValueError: distance must be greater than 0
