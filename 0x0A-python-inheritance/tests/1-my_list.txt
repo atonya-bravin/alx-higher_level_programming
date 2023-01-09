@@ -26,6 +26,15 @@ print_sorted() Operations
 non-parameter test cases
 ************************
    
+   Test case #0: Empty list
+   ************************
+   >>> print(my_list)
+   []
+   >>> my_list.print_sorted()
+   []
+   >>> print(my_list)
+   []
+
    Test case #1: Empty parameter list
    **********************************
    >>> my_list.append(1)
