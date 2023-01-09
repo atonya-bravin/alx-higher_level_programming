@@ -1,0 +1,39 @@
+**********
+1. My list
+**********
+
+******************
+Module importation
+******************
+   >>> MyList = __import__('1-my_list').MyList
+
+**********************
+my_list initialisation
+**********************
+   >>> my_list = MyList()
+
+**************
+print_sorted()
+**************
+   Prints the list, but sorted (ascending sort)
+
+*************************
+print_sorted() Operations
+*************************
+   #1) Print the list, but sorted (ascending sort)
+
+************************
+non-parameter test cases
+************************
+   
+   Test case #1: Empty parameter list
+   **********************************
+   >>> my_list.append(1)
+   >>> my_list.append(4)
+   >>> my_list.append(2)
+   >>> print(my_list)
+   [1, 4, 2]
+   >>> my_list.print_sorted()
+   [1, 2, 4]
+   >>> print(my_list)
+   [1, 4, 2]
