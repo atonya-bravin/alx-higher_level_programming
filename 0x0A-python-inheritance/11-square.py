@@ -81,7 +81,7 @@ class Square(Rectangle):
             manipulation of the print function output
         """
 
-        return ("[Rectangle] {}/{}".format(self.__size, self.__size))
+        return ("[Square] {}/{}".format(self.__size, self.__size))
 
     def area(self):
         """
