@@ -7,25 +7,20 @@
 
 from os import path
 import sys
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+save = __import__('5-save_to_json_file').save_to_json_file
+load = __import__('6-load_from_json_file').load_from_json_file
 
 
 def work_magic(fileName):
-
-    if path.exists('add_item.json'):
-        with open(fileName, "r") as myFile:
-            my_list = load_from_json_file(fileName)
-
-        for arg_index in range(1, len(sys.argv)):
-            my_list.append(sys.argv[arg_index])
-
-        with open(fileName, "w") as myFile:
-            save_to_json_file(my_list, fileName)
+    args = sys.argv[1:]
+    jsonfile = "add_item.json"
+    try:
+        my_list = load(jsonfile)
+    except FileNotFoundError:
+        save(args, jsonfile)
     else:
-        my_list = []
-        with open(fileName, "w") as myFile:
-            save_to_json_file(my_list, fileName)
+        my_list.extend(args)
+        save(my_list, jsonfile)
 
 
 work_magic("add_item.json")
