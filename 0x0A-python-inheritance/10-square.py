@@ -76,13 +76,6 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         self.__size = size
 
-    def __str__(self):
-        """
-            manipulation of the print function output
-        """
-
-        return ("[Rectangle] {}/{}".format(self.__size, self.__size))
-
     def area(self):
         """
             function that calculates and returns the area of the rectangle
