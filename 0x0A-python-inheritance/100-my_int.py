@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+    Module tasked with overloading of "==" and "!="
+"""
+
+
 class MyInt(int):
     def __init__(self, value):
         self.value = value
