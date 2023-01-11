@@ -11,7 +11,7 @@ def add_attribute(self, key, value):
         adds an attribute to a class if possible else raises TypeError
     """
 
-    if (type(self) != str):
+    if (type(self) not in [int, str, float]):
         setattr(self, key, value)
     else:
         raise TypeError("can't add new attribute")
