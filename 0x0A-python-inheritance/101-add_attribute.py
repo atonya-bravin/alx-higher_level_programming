@@ -12,9 +12,8 @@ def add_attribute(self, key, value):
     """
 
     if (type(self) not in [int, str, list]):
-        setattr(self, key, value)
-        if (hasattr(self, key)):
-            pass
+        if (key in self.__slots__):
+            setattr(self, key, value)
         else:
             raise TypeError("can't add new attribute")
     else:
