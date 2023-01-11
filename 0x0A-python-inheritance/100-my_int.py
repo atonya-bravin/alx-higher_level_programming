@@ -6,6 +6,10 @@
 
 
 class MyInt(int):
+    """
+        class containing all the overloading methods
+    """
+
     def __init__(self, value):
         self.value = value
 
