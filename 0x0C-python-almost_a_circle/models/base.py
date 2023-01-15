@@ -12,6 +12,7 @@ class Base():
     """
 
     __nb_objects = 0
+    id = None;
 
     def __init__(self, id=None):
         if (id != None):
