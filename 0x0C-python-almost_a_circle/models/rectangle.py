@@ -35,20 +35,20 @@ class Rectangle(Base):
 
 
     @property
-    def width():
-        return __width
+    def width(self):
+        return self.__width
 
     @property
-    def height():
-        return __height
+    def height(self):
+        return self.__height
 
     @property
-    def x():
-        return x
+    def x(self):
+        return self.__x
 
     @property
-    def y():
-        return y
+    def y(self):
+        return self.__y
 
     @width.setter
     def width(self, width):
@@ -83,10 +83,11 @@ class Rectangle(Base):
         my_string = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
         return my_string
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         modif_attrs = ['id', 'width', 'height', 'x', 'y']
 
         argument_count = len(args)
+        key_count = len(kwargs)
 
         if (argument_count > 5):
             argument_count = 5
@@ -94,3 +95,7 @@ class Rectangle(Base):
         if (argument_count > 0):
             for argc in range(argument_count):
                 setattr(self, modif_attrs[argc], args[argc])
+        elif (key_count > 0):
+            for (key, value) in kwargs.items():
+                if key in modif_attrs:
+                    setattr(self, key, value)
