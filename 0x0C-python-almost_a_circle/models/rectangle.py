@@ -82,3 +82,15 @@ class Rectangle(Base):
     def __str__(self):
         my_string = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
         return my_string
+
+    def update(self, *args):
+        modif_attrs = ['id', 'width', 'height', 'x', 'y']
+
+        argument_count = len(args)
+
+        if (argument_count > 5):
+            argument_count = 5
+
+        if (argument_count > 0):
+            for argc in range(argument_count):
+                setattr(self, modif_attrs[argc], args[argc])
