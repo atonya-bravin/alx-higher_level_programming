@@ -35,11 +35,11 @@ class Rectangle(Base):
             to be used in the application
         """
 
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(param))
-        if param in ('height', 'width') and value <= 0:
+        if value <= 0 and param in ('height', 'width'):
             raise ValueError("{} must be > 0".format(param))
-        if param in ('x', 'y') and value < 0:
+        if value < 0 and param in ('x', 'y'):
             raise ValueError("{} must be >= 0".format(param))
 
     @property
@@ -47,7 +47,7 @@ class Rectangle(Base):
         """
             the width getter method
         """
-
+        
         return self.__width
 
     @property
@@ -80,6 +80,7 @@ class Rectangle(Base):
             the width setter method
         """
 
+        setter_validator(width)
         self.__width = width
 
     @height.setter
@@ -88,6 +89,7 @@ class Rectangle(Base):
             the height setter method
         """
 
+        setter_validator(height)
         self.__height = height
 
     @x.setter
@@ -95,7 +97,8 @@ class Rectangle(Base):
         """
             the x setter method
         """
-
+        
+        setter_validator(x)
         self.__x = x
 
     @y.setter
@@ -104,6 +107,7 @@ class Rectangle(Base):
             the y setter method
         """
 
+        setter_validator(y)
         self.__y = y
 
     def area(self):
