@@ -47,7 +47,7 @@ class Rectangle(Base):
         """
             the width getter method
         """
-        
+
         return self.__width
 
     @property
@@ -97,7 +97,7 @@ class Rectangle(Base):
         """
             the x setter method
         """
-        
+
         self.setter_validator(x, 'x')
         self.__x = x
 

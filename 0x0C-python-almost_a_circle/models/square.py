@@ -8,6 +8,7 @@
 
 from .rectangle import Rectangle
 
+
 class Square(Rectangle):
     """
         class used to create square instances
@@ -17,5 +18,6 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        my_string = "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.height)
+        my_string = "[Square] ({}) {}/{} - {}".format(self.id, self.x,
+                                                      self.y, self.height)
         return my_string
