@@ -8,14 +8,15 @@
 class Base():
     """
         The goal of this class is to manage id attribute in all our future
-        classes and to avoid duplicating the same code (by extension, same bugs)
+        classes and to avoid duplicating the same code
+        (by extension, same bugs)
     """
 
     __nb_objects = 0
-    id = None;
+    id = None
 
     def __init__(self, id=None):
-        if (id != None):
+        if (id is not None):
             self.id = id
         else:
             Base.__nb_objects = Base.__nb_objects + 1
