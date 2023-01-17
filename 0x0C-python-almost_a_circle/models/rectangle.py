@@ -80,7 +80,7 @@ class Rectangle(Base):
             the width setter method
         """
 
-        self.setter_validator(width)
+        self.setter_validator(width, 'width')
         self.__width = width
 
     @height.setter
@@ -89,7 +89,7 @@ class Rectangle(Base):
             the height setter method
         """
 
-        self.setter_validator(height)
+        self.setter_validator(height, 'height')
         self.__height = height
 
     @x.setter
@@ -98,7 +98,7 @@ class Rectangle(Base):
             the x setter method
         """
         
-        self.setter_validator(x)
+        self.setter_validator(x, 'x')
         self.__x = x
 
     @y.setter
@@ -107,7 +107,7 @@ class Rectangle(Base):
             the y setter method
         """
 
-        self.setter_validator(y)
+        self.setter_validator(y, 'y')
         self.__y = y
 
     def area(self):
