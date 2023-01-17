@@ -6,11 +6,11 @@
 
 from .base import Base
 
+
 class Rectangle(Base):
     """
         This class is a build up of the Base class
     """
-
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -33,7 +33,6 @@ class Rectangle(Base):
         if param in ('x', 'y') and value < 0:
             raise ValueError("{} must be >= 0".format(param))
 
-
     @property
     def width(self):
         return self.__width
@@ -55,7 +54,7 @@ class Rectangle(Base):
         self.__width = width
 
     @height.setter
-    def height(self,height):
+    def height(self, height):
         self.__height = height
 
     @x.setter
@@ -80,7 +79,10 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        my_string = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        my_string = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
+                                                            self.__y,
+                                                            self.__width,
+                                                            self.__height)
         return my_string
 
     def update(self, *args, **kwargs):
