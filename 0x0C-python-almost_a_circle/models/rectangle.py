@@ -136,10 +136,10 @@ class Rectangle(Base):
             function overloading
         """
 
-        my_string = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
-                                                            self.__y,
-                                                            self.__width,
-                                                            self.__height)
+        my_string = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                            self.y,
+                                                            self.width,
+                                                            self.height)
         return my_string
 
     def update(self, *args, **kwargs):
@@ -162,3 +162,14 @@ class Rectangle(Base):
             for (key, value) in kwargs.items():
                 if key in modif_attrs:
                     setattr(self, key, value)
+    def to_dictionary(self):
+        """
+            returns the object as a dictionary
+        """
+        return {
+                    'id': self.id,
+                    'width': self.width,
+                    'height': self.height,
+                    'x': self.x,
+                    'y': self.y
+                }
