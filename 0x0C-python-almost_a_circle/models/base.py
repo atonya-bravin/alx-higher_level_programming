@@ -3,6 +3,7 @@
 """
     This is the base mode
 """
+import json
 
 
 class Base():
@@ -16,8 +17,19 @@ class Base():
     id = None
 
     def __init__(self, id=None):
+        """
+            initialization method
+        """
+
         if (id is not None):
             self.id = id
         else:
             Base.__nb_objects = Base.__nb_objects + 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """
+            returns a string representation of the dict passed to it
+        """
+
+        return json.dumps(list_dictionaries)
