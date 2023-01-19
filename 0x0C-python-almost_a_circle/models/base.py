@@ -54,3 +54,14 @@ class Base():
                 my_list.append(elem.to_dictionary())
 
             return file_des.write(cls.to_json_string(my_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+            returns a list from string
+        """
+
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
