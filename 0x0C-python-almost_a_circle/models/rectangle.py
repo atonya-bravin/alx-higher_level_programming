@@ -162,6 +162,7 @@ class Rectangle(Base):
             for (key, value) in kwargs.items():
                 if key in modif_attrs:
                     setattr(self, key, value)
+
     def to_dictionary(self):
         """
             returns the object as a dictionary
