@@ -1,6 +1,6 @@
--- Creates the table `id_not_null`
--- in MySQL Server with an ID default value.
-CREATE TABLE IF NOT EXISTS id_not_null (
-	id INT DEFAULT 1,
+-- Creates the table `force_name`
+-- in MySQL Server.
+CREATE TABLE IF NOT EXISTS force_name (
+	id INT,
 	name VARCHAR(256) NOT NULL
 );
