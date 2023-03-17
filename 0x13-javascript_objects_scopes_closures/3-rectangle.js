@@ -9,10 +9,10 @@ module.exports = class Rectangle {
     }
   }
 
-  print(){
-    for (let h = 0; h < this.height; h++){
-      for (let w = 0; w < this.width; w++){
-        process.stdout.write("X");
+  print () {
+    for (let h = 0; h < this.height; h++) {
+      for (let w = 0; w < this.width; w++) {
+        process.stdout.write('X');
       }
       console.log();
     }
