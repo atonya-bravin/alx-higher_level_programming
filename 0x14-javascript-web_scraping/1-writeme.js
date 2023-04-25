@@ -7,7 +7,8 @@ if (process.argv.length < 4) {
 }
 // Call on the filesystem
 const fs = require('fs');
-const filename = process.argv[3];
+const filename = process.argv[2];
+const string = process.argv[3];
 fs.readFile(filename, 'utf8', string, (err) => {
 	if (err) {
 		console.log(err);
