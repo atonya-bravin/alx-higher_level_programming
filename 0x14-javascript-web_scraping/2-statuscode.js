@@ -2,7 +2,6 @@
 
 const https = require('https');
 
-console.log(process.argv[2]);
 const url = process.argv[2];
 
 https.get(url, (res) => {
