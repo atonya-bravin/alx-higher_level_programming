@@ -14,5 +14,4 @@ fs.writeFile(filename, string, {encoding: 'utf-8'}, (err) => {
 		console.log(err);
 		process.exit(1);
 	}
-	console.log(data);
 });
