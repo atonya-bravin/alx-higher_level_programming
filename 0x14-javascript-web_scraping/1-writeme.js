@@ -9,7 +9,7 @@ if (process.argv.length < 4) {
 const fs = require('fs');
 const filename = process.argv[2];
 const string = process.argv[3];
-fs.readFile(filename, 'utf8', string, (err) => {
+fs.readFile(filename, string, {encoding: 'utf8'}, (err) => {
 	if (err) {
 		console.log(err);
 		process.exit(1);
