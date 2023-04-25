@@ -6,8 +6,8 @@ if (process.argv.length < 3) {
 	process.exit(1);
 }
 // Call on the filesystem
-var fs = require('fs');
-var filename = process.argv[2];
+let fs = require('fs');
+let filename = process.argv[2];
 fs.readFile(filename, 'utf8', function(err, data) {
     if (err)
 	console.log(err);
