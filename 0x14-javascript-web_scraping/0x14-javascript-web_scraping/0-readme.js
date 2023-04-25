@@ -9,7 +9,9 @@ if (process.argv.length < 3) {
 let fs = require('fs');
 let filename = process.argv[2];
 fs.readFile(filename, 'utf8', function(err, data) {
-    if (err)
+    if (err){
 	console.log(err);
+	process.exit(1);
+    }
     console.log(data)
 });
