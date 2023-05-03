@@ -1,7 +1,6 @@
-document.addEventListener("DOMContentLoaded", () =>{
+$('document').ready(
 	function changeTextColor()
 	{
 		$('header').css('color','#FF0000');
 	}
-	changeTextColor();
-});
+);
